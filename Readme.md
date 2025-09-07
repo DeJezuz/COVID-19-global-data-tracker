@@ -1,98 +1,82 @@
-✅ 1. Upload Your Project to GitHub
+# 🧠 COVID-19 Global Data Tracker
 
-🔧 Create a New Public Repository
-1. Go to GitHub.
-2. Click the ➕ icon (top-right) → New repository.
-3. Fill in:
-   - Repository name: covid19-global-data-tracker
-   - Description: “A data analysis project visualizing global COVID-19 trends using Python.”
-   - Set to Public
-   - Check Add README file
-4. Click Create repository
-
-📤 Upload Your Files
-You can either:
-- Drag and drop files directly via the GitHub web interface, or
-- Use Git from your terminal:
-
-`bash
-git clone https://github.com/your-username/covid19-global-data-tracker.git
-cd covid19-global-data-tracker
-
-Add your notebook and other files
-git add .
-git commit -m "Initial commit with notebook and assets"
-git push origin main
-`
+A data analysis project built in Google Colab that visualizes global COVID-19 trends across cases, deaths, and vaccinations using Python. This notebook uses real-world data to uncover insights and present them through clear visualizations and commentary.
 
 ---
 
-✅ 2. Add a README.md File
+## 📌 Objectives
 
-Here’s a professional template you can paste into your README.md:
-
-`markdown
-
-🧠 COVID-19 Global Data Tracker
-
-A data analysis notebook that visualizes global COVID-19 trends across cases, deaths, and vaccinations using Python.
-
-📌 Objectives
-
-- Import and clean real-world COVID-19 data
-- Analyze time trends across countries
-- Visualize cases, deaths, and vaccination progress
-- Communicate insights with charts and narrative
-
-🛠️ Tools & Libraries
-
-- Python 3.x
-- pandas
-- matplotlib
-- seaborn
-- plotly (optional for choropleth maps)
-- Jupyter Notebook
-
-🚀 How to Run
-
-1. Clone the repository:
-   `bash
-   git clone https://github.com/your-username/covid19-global-data-tracker.git
-   `
-2. Open the notebook in Jupyter:
-   `bash
-   jupyter notebook covid19_analysis.ipynb
-   `
-3. Run all cells from top to bottom.
-
-💡 Insights & Reflections
-
-- The U.S. had the highest cumulative case count.
-- India showed rapid vaccination rollout post mid-2021.
-- Kenya maintained a relatively low death rate.
-- Vaccination rates inversely correlated with new case spikes.
-- Data gaps in some regions highlight reporting inconsistencies.
-`
+- Import and clean global COVID-19 data  
+- Analyze trends across selected countries  
+- Visualize cases, deaths, and vaccination progress  
+- Communicate findings through charts and narrative insights  
 
 ---
 
-✅ 3. Check That Your Notebook Runs Cleanly
+## 🛠️ Tools & Libraries
 
-Before uploading:
-- Open your .ipynb file in Jupyter
-- Click Kernel → Restart & Run All
-- Confirm:
-  - No errors
-  - All charts render correctly
-  - Markdown cells are clean and readable
+This project was developed using:
+
+- Google Colab (no local installation required)  
+- Python 3.x  
+- `pandas` — data manipulation  
+- `matplotlib` & `seaborn` — static visualizations  
+- `plotly.express` — interactive charts and maps  
 
 ---
 
-✅ 4. Share Your GitHub Repository Link
+## 🚀 How to Run the Notebook
 
-Once uploaded, copy your repo URL:
-`
-https://github.com/your-username/covid19-global-data-tracker
-`
+To view or run the notebook:
 
-Submit it via the class form or send it directly to your instructor as instructed.
+1. Open the notebook in [Google Colab](https://colab.research.google.com)
+2. Upload the dataset `owid-covid-data.csv` using the file browser (left sidebar)
+3. Run each cell from top to bottom by clicking the ▶️ play button
+
+---
+
+## 📊 Visualizations Included
+
+- **Total COVID-19 Cases Over Time**  
+- **Death Rate Over Time**  
+- **Vaccination Progress Over Time**  
+- **Global Choropleth Map (Optional)**  
+- **Narrative Insights Summary**
+
+---
+
+## 📁 Project Structure
+covid19-global-data-tracker/
+│
+├── COVID19analysis.ipynb      # Main notebook (Google Colab)
+├── owid-covid-data.csv          # Source dataset
+├── README.md                    # Project overview
+
+
+---
+
+## 💡 Key Insights
+
+- 🇺🇸 The United States had the highest cumulative case count  
+- 🇮🇳 India showed a rapid vaccination rollout starting mid-2021  
+- 🇰🇪 Kenya maintained a relatively low death rate despite case surges  
+- 📉 Vaccination rates tended to rise after spikes in cases  
+- ⚠️ Some countries had missing or inconsistent data, affecting analysis
+
+---
+
+## 📎 Data Source
+
+- [Our World in Data COVID-19 Dataset](https://github.com/owid/covid-19-data)
+
+---
+
+## 🧾 License
+
+This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT)
+
+---
+
+## 🙌 Acknowledgments
+
+Thanks to the open data community and the developers of Google Colab for making data science accessible to everyone.
